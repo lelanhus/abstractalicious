@@ -1,6 +1,13 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.3'
+gem 'devise'
+gem 'inherited_resources'
+gem 'rack-ssl-enforcer', :require => 'rack/ssl-enforcer'
+gem 'pdfkit'
+gem 'paperclip'
+gem 'aws-s3', :require => 'aws/s3'
+gem 'rmagick'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
