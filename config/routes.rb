@@ -1,16 +1,10 @@
 Abstractalicious::Application.routes.draw do
   
-  
   devise_for :users
-
-  devise_scope :user do
-    get "/" => "devise/sessions#new"
-  end
   
-  namespace :user do
-    root :to => "submissions#index"
-  end
+  match '/submissions' => 'submissions#index', :as => 'user_root'
   
+  root :to => 'pages#home'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
