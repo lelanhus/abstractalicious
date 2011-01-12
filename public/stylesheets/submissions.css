@@ -11,15 +11,24 @@ body nav#submission_links {
   float: right; }
   body nav#submission_links li {
     list-style: none; }
-body form#new_submission label {
+body form#new_submission label, body form.edit_submission label {
   display: none; }
-body form#new_submission fieldset {
+body form#new_submission fieldset, body form.edit_submission fieldset {
   margin-bottom: 10px; }
-body form#new_submission input, body form#new_submission textarea {
+body form#new_submission input, body form#new_submission textarea, body form.edit_submission input, body form.edit_submission textarea {
   font-size: 14px;
   padding: 4px;
   width: 97%; }
-body form#new_submission input#submission_submit {
+body form#new_submission input#submission_submit, body form.edit_submission input#submission_submit {
   width: 25%; }
-body form#new_submission li {
+body form#new_submission li, body form.edit_submission li {
   list-style: none; }
+body article#submission {
+  float: left; }
+  body article#submission header {
+    border: none;
+    margin: 0; }
+    body article#submission header h1 {
+      margin: 0; }
+  body article#submission section#authors {
+    margin-bottom: 10px; }

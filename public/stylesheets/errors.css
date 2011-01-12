@@ -1,0 +1,5 @@
+div#errorExplanation {
+  border: 2px solid red;
+  color: red; }
+  div#errorExplanation li {
+    list-style-type: circle; }

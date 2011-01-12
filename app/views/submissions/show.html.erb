@@ -1,0 +1,16 @@
+<article id="submission">
+  <header>
+    <h1><%= @submission.title %></h1>
+  </header>
+  
+  <section id="authors">
+    <%= @submission.authors %>
+  </section>
+  <%= @submission.body %>
+</article>
+
+<nav id="submission_links">
+  <ul>
+    <li><%= link_to 'Edit this submission', edit_submission_url(@submission) %></li>
+  </ul>
+</nav>

@@ -19,7 +19,7 @@ body {
     }
   }
   
-  form#new_submission {
+  form#new_submission, form.edit_submission {
     @extend .grid_8;
     label {
       display: none;
@@ -37,6 +37,21 @@ body {
     }
     li {
       list-style: none;
+    }
+  }
+  
+  article#submission {
+    @extend .grid_8;
+    float: left;
+    header {
+      border: none;
+      margin: 0;
+      h1 {
+        margin: 0;
+      }
+    }
+    section#authors {
+      margin-bottom: 10px;
     }
   }
 }
