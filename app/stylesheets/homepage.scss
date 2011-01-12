@@ -1,0 +1,28 @@
+body {
+  article {
+    @extend .row;
+    margin: 14px 0px;
+    section#left_side {
+      @extend .grid_6;
+      float: left;
+    }
+    section#right_side {
+      @extend .grid_6;
+      background: #e5e5e5;
+      -mox-border-radius: 10px;
+      border-radius: 10px;
+      float: right;
+      padding-left: 10px;
+      padding-bottom: 10px;
+      h2 {
+        margin-top: 10px;
+      }
+      form#signin_form, form#signup_form {
+        input {
+          font-size: 20px;
+          padding: 4px;
+        }
+      }
+    }
+  }
+}

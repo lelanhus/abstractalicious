@@ -17,7 +17,7 @@
 .grid_5 {
   width: 380px; }
 
-.grid_6 {
+.grid_6, body article section#left_side, body article section#right_side {
   width: 460px; }
 
 .grid_7 {
@@ -44,18 +44,37 @@
   float: left;
   display: inline; }
 
-.row, body header, body footer {
+.row, body header, body footer, body article {
   width: 960px;
   margin: 0 auto;
   overflow: hidden; }
-  .row .row, body header .row, body footer .row, .row body header, body .row header, body header header, body footer header, .row body footer, body .row footer, body header footer, body footer footer {
+  .row .row, body header .row, body footer .row, body article .row, .row body header, body .row header, body header header, body footer header, body article header, .row body footer, body .row footer, body header footer, body footer footer, body article footer, .row body article, body .row article, body header article, body footer article, body article article {
     margin: 0 -10px;
     width: auto;
     display: inline-block; }
 
 body header, body hgroup, body article, body section, body nav, body footer {
-  display: block; }
+  display: block;
+  margin: 0;
+  padding: 0; }
 body header {
   border-bottom: 1px solid #e5e5e5; }
 body footer {
   border-top: 1px solid #e5e5e5; }
+
+body article {
+  margin: 14px 0px; }
+  body article section#left_side {
+    float: left; }
+  body article section#right_side {
+    background: #e5e5e5;
+    -mox-border-radius: 10px;
+    border-radius: 10px;
+    float: right;
+    padding-left: 10px;
+    padding-bottom: 10px; }
+    body article section#right_side h2 {
+      margin-top: 10px; }
+    body article section#right_side form#signin_form input, body article section#right_side form#signup_form input {
+      font-size: 20px;
+      padding: 4px; }

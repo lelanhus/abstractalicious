@@ -1,0 +1,16 @@
+body article {
+  margin: 14px 0px; }
+  body article section#left_side {
+    float: left; }
+  body article section#right_side {
+    background: #e5e5e5;
+    -mox-border-radius: 10px;
+    border-radius: 10px;
+    float: right;
+    padding-left: 10px;
+    padding-bottom: 10px; }
+    body article section#right_side h2 {
+      margin-top: 10px; }
+    body article section#right_side form#signin_form input, body article section#right_side form#signup_form input {
+      font-size: 20px;
+      padding: 4px; }
