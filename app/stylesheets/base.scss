@@ -8,10 +8,21 @@ body {
   }
   header, footer {
     @extend .row;
-    @extend .grid_12;
   }
   header {
     border-bottom: 1px solid $border_color;
+    hgroup {
+      @extend .grid_8;
+      float: left;
+    }
+    nav {
+      @extend .grid_4;
+      float: right;
+      text-align: right;
+      li {
+        list-style: none;
+      }
+    }
   }
   footer {
     border-top: 1px solid $border_color;

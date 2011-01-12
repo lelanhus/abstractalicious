@@ -11,7 +11,7 @@
 .grid_3 {
   width: 220px; }
 
-.grid_4 {
+.grid_4, body header nav, body nav#submission_links {
   width: 300px; }
 
 .grid_5 {
@@ -23,7 +23,7 @@
 .grid_7 {
   width: 540px; }
 
-.grid_8 {
+.grid_8, body header hgroup, body article#submissions, body form#new_submission {
   width: 620px; }
 
 .grid_9 {
@@ -35,7 +35,7 @@
 .grid_11 {
   width: 860px; }
 
-.grid_12, body header, body footer {
+.grid_12 {
   width: 940px; }
 
 .column {
@@ -59,6 +59,13 @@ body header, body hgroup, body article, body section, body nav, body footer {
   padding: 0; }
 body header {
   border-bottom: 1px solid #e5e5e5; }
+  body header hgroup {
+    float: left; }
+  body header nav {
+    float: right;
+    text-align: right; }
+    body header nav li {
+      list-style: none; }
 body footer {
   border-top: 1px solid #e5e5e5; }
 
@@ -78,3 +85,29 @@ body article {
     body article section#right_side form#signin_form input, body article section#right_side form#signup_form input {
       font-size: 20px;
       padding: 4px; }
+
+body article#submissions {
+  float: left;
+  margin-top: 10px; }
+  body article#submissions p#no_submissions {
+    background: #ffe17f;
+    border: 8px solid #ffc64c;
+    padding: 10px; }
+body nav#submission_links {
+  border-left: 1px solid #e5e5e5;
+  margin-top: 10px;
+  float: right; }
+  body nav#submission_links li {
+    list-style: none; }
+body form#new_submission label {
+  display: none; }
+body form#new_submission fieldset {
+  margin-bottom: 10px; }
+body form#new_submission input, body form#new_submission textarea {
+  font-size: 14px;
+  padding: 4px;
+  width: 97%; }
+body form#new_submission input#submission_submit {
+  width: 25%; }
+body form#new_submission li {
+  list-style: none; }

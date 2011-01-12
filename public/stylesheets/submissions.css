@@ -1,0 +1,25 @@
+body article#submissions {
+  float: left;
+  margin-top: 10px; }
+  body article#submissions p#no_submissions {
+    background: #ffe17f;
+    border: 8px solid #ffc64c;
+    padding: 10px; }
+body nav#submission_links {
+  border-left: 1px solid #e5e5e5;
+  margin-top: 10px;
+  float: right; }
+  body nav#submission_links li {
+    list-style: none; }
+body form#new_submission label {
+  display: none; }
+body form#new_submission fieldset {
+  margin-bottom: 10px; }
+body form#new_submission input, body form#new_submission textarea {
+  font-size: 14px;
+  padding: 4px;
+  width: 97%; }
+body form#new_submission input#submission_submit {
+  width: 25%; }
+body form#new_submission li {
+  list-style: none; }

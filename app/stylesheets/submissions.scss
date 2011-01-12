@@ -1,0 +1,42 @@
+body {
+  article#submissions {
+    @extend .grid_8;
+    float: left;
+    margin-top: 10px;
+    p#no_submissions {
+      background: #ffe17f;
+      border: 8px solid #ffc64c;
+      padding: 10px;
+    }
+  }
+  nav#submission_links {
+    border-left: 1px solid #e5e5e5;
+    margin-top: 10px;
+    @extend .grid_4;
+    float: right;
+    li {
+      list-style: none;
+    }
+  }
+  
+  form#new_submission {
+    @extend .grid_8;
+    label {
+      display: none;
+    }
+    fieldset {
+      margin-bottom: 10px;
+    }
+    input, textarea {
+      font-size: 14px;
+      padding: 4px;
+      width: 97%;
+    }
+    input#submission_submit {
+      width: 25%;
+    }
+    li {
+      list-style: none;
+    }
+  }
+}

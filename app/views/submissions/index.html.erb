@@ -1,2 +1,14 @@
-<h1>Submissions#index</h1>
-<p>Find me in app/views/submissions/index.html.erb</p>
+<article id="submissions">
+  <% if @submissions.empty? %>
+    <%= render "no_submissions" %>
+  <% else %>
+    <%= render "submissions" %>
+  <% end %>
+</article>
+
+
+<nav id="submission_links">
+  <ul>
+    <li><%= link_to 'Start a new submission', new_submission_url %></li>
+  </ul>
+</nav>

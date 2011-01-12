@@ -4,5 +4,12 @@ body header, body hgroup, body article, body section, body nav, body footer {
   padding: 0; }
 body header {
   border-bottom: 1px solid #e5e5e5; }
+  body header hgroup {
+    float: left; }
+  body header nav {
+    float: right;
+    text-align: right; }
+    body header nav li {
+      list-style: none; }
 body footer {
   border-top: 1px solid #e5e5e5; }

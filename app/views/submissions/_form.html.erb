@@ -1,0 +1,23 @@
+<%= form_for(@submission) do |f| %>
+  <ol>
+    <fieldset>
+      <legend>Title</legend>
+      <li><%= f.label :title %> <%= f.text_field :title %></li>
+    </fieldset>
+    
+    <fieldset>
+      <legend>Authors</legend>
+      <li><%= f.label :authors %><%= f.text_field :authors %></li>
+    </fieldset>
+    
+    <fieldset>
+      <legend>Body</legend>
+      <li><%= f.label :body %><%= f.text_area :body %></li>
+    </fieldset>
+    
+    <li><%= f.submit %></li>
+  </ol>
+
+  
+  
+<% end %>

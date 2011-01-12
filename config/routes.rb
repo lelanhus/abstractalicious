@@ -1,5 +1,6 @@
 Abstractalicious::Application.routes.draw do
   
+  resources :submissions
   devise_for :users
   
   match '/submissions' => 'submissions#index', :as => 'user_root'
