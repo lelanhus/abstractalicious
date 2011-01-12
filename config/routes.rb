@@ -7,6 +7,10 @@ Abstractalicious::Application.routes.draw do
     get "/" => "devise/sessions#new"
   end
   
+  namespace :user do
+    root :to => "submissions#index"
+  end
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
