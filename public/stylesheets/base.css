@@ -1,0 +1,6 @@
+body header, body hgroup, body article, body section, body nav, body footer {
+  display: block; }
+body header {
+  border-bottom: 1px solid #e5e5e5; }
+body footer {
+  border-top: 1px solid #e5e5e5; }

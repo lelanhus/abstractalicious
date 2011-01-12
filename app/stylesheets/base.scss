@@ -1,0 +1,17 @@
+$border_color: #e5e5e5;
+
+body {
+  header, hgroup, article, section, nav, footer {
+    display: block;
+  }
+  header, footer {
+    @extend .row;
+    @extend .grid_12;
+  }
+  header {
+    border-bottom: 1px solid $border_color;
+  }
+  footer {
+    border-top: 1px solid $border_color;
+  }
+}

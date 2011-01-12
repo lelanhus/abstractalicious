@@ -2,13 +2,22 @@
 <html>
 <head>
   <title>Abstractalicious</title>
-  <%= stylesheet_link_tag :all %>
+  <%= stylesheet_link_tag "application" %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
 <body>
+  <header>
+    <hgroup>
+      <h1>Abstractalicious</h1>
+    </hgroup>
+  </header>
 
-<%= yield %>
+  <%= yield %>
+  
+  <footer>
+    this is the footer.
+  </footer>
 
 </body>
 </html>
