@@ -6,7 +6,7 @@
   <section id="authors">
     <%= @submission.authors %>
   </section>
-  <%= raw textilize(@submission.body) %>
+  <%= raw RedCloth.new(@submission.body, [:filter_html]).to_html %>
 </article>
 
 <nav id="submission_links">
