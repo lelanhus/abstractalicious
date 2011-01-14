@@ -1,17 +1,9 @@
-<article id="submission">
-  <header>
-    <h1><%= @submission.title %></h1>
-  </header>
-  
-  <section id="authors">
-    <%= @submission.authors %>
-  </section>
-  <%= raw RedCloth.new(@submission.body, [:filter_html]).to_html %>
-</article>
+<%= render 'submission' %>
+
 
 <nav id="submission_links">
   <ul>
     <li><%= link_to 'Edit this submission', edit_submission_url(@submission) %></li>
-    <li><%= link_to 'PDF Version', submission_url(@submission, :format => "pdf")%></li>
+    <li><%= link_to 'PDF Version', pdf_submission_submission_url(@submission)%></li>
   </ul>
 </nav>

@@ -1,6 +1,8 @@
 Abstractalicious::Application.routes.draw do
   
-  resources :submissions
+  resources :submissions do
+    get :pdf_submission, :on => :member
+  end
   devise_for :users
   
   match '/submissions' => 'submissions#index', :as => 'user_root'
