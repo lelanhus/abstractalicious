@@ -2,14 +2,14 @@ body header, body hgroup, body article, body section, body nav, body footer {
   display: block;
   margin: 0;
   padding: 0; }
-body header {
+body header#main {
   border-bottom: 1px solid #e5e5e5; }
-  body header hgroup {
+  body header#main hgroup {
     float: left; }
-  body header nav {
+  body header#main nav {
     float: right;
     text-align: right; }
-    body header nav li {
+    body header#main nav li {
       list-style: none; }
 body footer {
   border-top: 1px solid #e5e5e5; }

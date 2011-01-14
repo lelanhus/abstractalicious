@@ -11,7 +11,7 @@
 .grid_3 {
   width: 220px; }
 
-.grid_4, body header nav, body nav#submission_links {
+.grid_4, body header#main nav {
   width: 300px; }
 
 .grid_5 {
@@ -23,7 +23,7 @@
 .grid_7 {
   width: 540px; }
 
-.grid_8, body header hgroup, body article#submissions, body form#new_submission, body form.edit_submission, body article#submission {
+.grid_8, body header#main hgroup {
   width: 620px; }
 
 .grid_9 {
@@ -44,11 +44,11 @@
   float: left;
   display: inline; }
 
-.row, body header, body footer, body article {
+.row, body header#main, body footer, body article {
   width: 960px;
   margin: 0 auto;
   overflow: hidden; }
-  .row .row, body header .row, body footer .row, body article .row, .row body header, body .row header, body header header, body footer header, body article header, .row body footer, body .row footer, body header footer, body footer footer, body article footer, .row body article, body .row article, body header article, body footer article, body article article {
+  .row .row, body header#main .row, body footer .row, body article .row, .row body header#main, body .row header#main, body header#main header#main, body footer header#main, body article header#main, .row body footer, body .row footer, body header#main footer, body footer footer, body article footer, .row body article, body .row article, body header#main article, body footer article, body article article {
     margin: 0 -10px;
     width: auto;
     display: inline-block; }
@@ -57,14 +57,14 @@ body header, body hgroup, body article, body section, body nav, body footer {
   display: block;
   margin: 0;
   padding: 0; }
-body header {
+body header#main {
   border-bottom: 1px solid #e5e5e5; }
-  body header hgroup {
+  body header#main hgroup {
     float: left; }
-  body header nav {
+  body header#main nav {
     float: right;
     text-align: right; }
-    body header nav li {
+    body header#main nav li {
       list-style: none; }
 body footer {
   border-top: 1px solid #e5e5e5; }
@@ -85,41 +85,6 @@ body article {
     body article section#right_side form#signin_form input, body article section#right_side form#signup_form input {
       font-size: 20px;
       padding: 4px; }
-
-body article#submissions {
-  float: left;
-  margin-top: 10px; }
-  body article#submissions p#no_submissions {
-    background: #ffe17f;
-    border: 8px solid #ffc64c;
-    padding: 10px; }
-body nav#submission_links {
-  border-left: 1px solid #e5e5e5;
-  margin-top: 10px;
-  float: right; }
-  body nav#submission_links li {
-    list-style: none; }
-body form#new_submission label, body form.edit_submission label {
-  display: none; }
-body form#new_submission fieldset, body form.edit_submission fieldset {
-  margin-bottom: 10px; }
-body form#new_submission input, body form#new_submission textarea, body form.edit_submission input, body form.edit_submission textarea {
-  font-size: 14px;
-  padding: 4px;
-  width: 97%; }
-body form#new_submission input#submission_submit, body form.edit_submission input#submission_submit {
-  width: 25%; }
-body form#new_submission li, body form.edit_submission li {
-  list-style: none; }
-body article#submission {
-  float: left; }
-  body article#submission header {
-    border: none;
-    margin: 0; }
-    body article#submission header h1 {
-      margin: 0; }
-  body article#submission section#authors {
-    margin-bottom: 10px; }
 
 div#errorExplanation {
   border: 2px solid red;

@@ -6,10 +6,10 @@ body {
     margin: 0;
     padding: 0;
   }
-  header, footer {
+  header#main, footer {
     @extend .row;
   }
-  header {
+  header#main {
     border-bottom: 1px solid $border_color;
     hgroup {
       @extend .grid_8;
