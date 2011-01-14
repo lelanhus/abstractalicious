@@ -8,7 +8,9 @@ gem 'pdfkit'
 gem 'paperclip'
 gem 'aws-s3', :require => 'aws/s3'
 gem 'rmagick'
-gem 'haml'
+gem 'haml', :group => :development
+gem 'RedCloth'
+
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

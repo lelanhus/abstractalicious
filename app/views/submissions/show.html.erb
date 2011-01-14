@@ -6,7 +6,7 @@
   <section id="authors">
     <%= @submission.authors %>
   </section>
-  <%= @submission.body %>
+  <%= raw textilize(@submission.body) %>
 </article>
 
 <nav id="submission_links">

@@ -43,3 +43,5 @@ module Abstractalicious
     
   end
 end
+
+require 'RedCloth'
