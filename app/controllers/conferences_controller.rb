@@ -1,2 +1,4 @@
-class ConferencesController < ApplicationController
+class ConferencesController < InheritedResources::Base
+  before_filter :authenticate_user!
+  
 end

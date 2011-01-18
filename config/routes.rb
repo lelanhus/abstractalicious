@@ -1,10 +1,13 @@
 Abstractalicious::Application.routes.draw do
   
+  devise_for :admins
+  devise_for :users
+
   resources :submissions do
     get :pdf_submission, :on => :member
   end
-  devise_for :users
   
+  match '/dashboard' => 'admins/dashboard#show', :as => 'admin_root'
   match '/submissions' => 'submissions#index', :as => 'user_root'
   
   root :to => 'pages#home'
